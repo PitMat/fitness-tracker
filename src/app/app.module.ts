@@ -17,6 +17,7 @@ import { MaterialModule } from './material.module';
 import { HeaderComponent } from './navigation/header/header.component';
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
 import { StopTrainingComponent } from './training/stop-training.component';
+import { AuthService } from './auth/auth.service';
 
 
 
@@ -47,7 +48,7 @@ import { StopTrainingComponent } from './training/stop-training.component';
     FlexLayoutModule,
     FormsModule,
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent],
   entryComponents: [StopTrainingComponent]
 })
